@@ -2,9 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+path = os.getenv('CHROME_DRIVER_PATH')
 website = "https://www.thesun.co.uk/sport/football/"
-path = "C:/<YOUR_PATH>/chromedriver_win32/chromedriver.exe"
+#path = "C:/<YOUR_PATH>/chromedriver_win32/chromedriver.exe"
 
 # headless-mode
 options = Options()
