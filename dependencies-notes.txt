@@ -1,0 +1,4 @@
+pip install python-dotenv
+pip install selenium
+pip install pyinstaller
+pyinstaller --onefile  <file_name.py>
